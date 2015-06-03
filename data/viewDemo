@@ -1,0 +1,22 @@
+SearchView = Backbone.View.extend({
+        initialize: function(){
+            alert("Alerts suck.");
+        }
+    });
+
+    // The initialize function is always called when instantiating a Backbone View.
+    // Consider it the constructor of the class.
+    var search_view = new SearchView();
+
+
+    <div id="search_container"></div>
+
+    <script type="text/javascript">
+        SearchView = Backbone.View.extend({
+            initialize: function(){
+                alert("Alerts suck.");
+            }
+        });
+
+        var search_view = new SearchView({ el: $("#search_container") });
+    </script>
