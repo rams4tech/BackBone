@@ -14,7 +14,7 @@ $(document).ready(function(){
         },
         render: function(){
             alert("applying text to div attribute");
-            this.$el.html("Hello World");
+            this.$el.html("<h1>Hello World</h1>");
         }
     });
     var appView = new AppView();

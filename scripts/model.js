@@ -4,13 +4,15 @@
         BookName: ""
     },
 
+    idAttribute: ID,
+
     initialize: function () {
         console.log('Book has been intialized');
 
-        // Lets hook up some event handers to listen to model change
+        /*// Lets hook up some event handers to listen to model change
         this.on('change:BookName', function () {
             console.log('Message from specific listener: BookName has been changed');
-        });
+         });*/
 
         // Lets hook up some event handers to listen to model change
         this.on('change', function () {
