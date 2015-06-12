@@ -21,28 +21,32 @@
 
             function deleteModel() {
 
-                var book = new Book();
+                var book = new Book({ID: 1});
 
                 // Lets try to delete a model
                 book.destroy({
                     success: function () {
                         alert("The model has been destroyed successfully");
+                        alert("bookvalue:" + book.get('ID'));
                     }
                 });
             }
 
 
             function cloneModel() {
-                var book = new Book();
-
+                var book = new Book({ID: 1});
+                alert("bookvalue1:" + book.get('ID'));
                 var book2 = book.clone();
+                alert("bookvalue2:" + book2.get('ID'));
             }
 
             function createModelAttributesOnTheFly() {
                 var book = new Book({
-                    ID: 1,
-                    BookName: "Sample book"
+                    author: "orielly"
                 });
+
+                console.log("author:" + book.get('author'));
+                alert("bookvalue1:" + book.get('ID'));
             }
 
             function testGetAndSet() {

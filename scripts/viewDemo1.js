@@ -21,6 +21,7 @@ var bookView = Backbone.View.extend({
     },
 
     render: function () {
+        alert("li is added to the ul");
         this.$el.html('<li>' + this.model.get("BookName") + '</li>');
         return this;
     }
@@ -41,8 +42,9 @@ var bookListView = Backbone.View.extend({
     render: function () {
         this.$el.html('');
         this.$el.html(); // lets render this view
-
+        alert("render ul is called");
         for (var i = 0; i < this.model.length; ++i) {
+            alert("adding li is called");
             // lets create a book view to render
             var m_bookView = new bookView({model: this.model.at(i)});
 

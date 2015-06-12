@@ -21,7 +21,8 @@
 
     handleRoute1: function () {
         if (this.view1 == null) {
-            this.view1 = new View1({model: this.greeting});
+            var viewModel1 = new GreetModel({Message: "This is coming from Model of view 1"});
+            this.view1 = new View1({model: viewModel1});
         }
 
         this.container.myChildView = this.view1;
@@ -30,7 +31,8 @@
 
     handleRoute2: function () {
         if (this.view2 == null) {
-            this.view2 = new View2({model: this.greeting});
+            var viewModel1 = new GreetModel({Message: "This is coming from Model of view 2kljkljkljkljklkjllkj"});
+            this.view2 = new View2({model: viewModel1});
         }
 
         this.container.myChildView = this.view2;
@@ -39,7 +41,8 @@
 
     handleRoute3: function () {
         if (this.view3 == null) {
-            this.view3 = new View3({model: this.greeting});
+            var viewModel1 = new GreetModel({Message: "ljkljkljkljlkjkljtkljkljklj"});
+            this.view3 = new View3({model: viewModel1});
         }
 
         this.container.myChildView = this.view3;

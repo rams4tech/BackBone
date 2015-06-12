@@ -4,7 +4,7 @@
         BookName: ""
     },
 
-    idAttribute: "ID",
+    //idAttribute: "ID",
 
     initialize: function () {
         console.log('Book has been intialized');
@@ -23,8 +23,8 @@
         if (attr.ID <= 0) {
             return "Invalid value for ID supplied."
         }
-    },
+    }
 
-    urlRoot: 'http://localhost:51377/api/Books'
+    //urlRoot: 'http://localhost:51377/api/Books'
 });
 
