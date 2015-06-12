@@ -9,7 +9,8 @@ window.Employee = Backbone.Model.extend({
         "dob": "",
         "doj": "",
         "phoneNum": ""
-    }
+    },
+    idAttribute: "empid"
 });
 
 window.EmployeeCollection = Backbone.Collection.extend({

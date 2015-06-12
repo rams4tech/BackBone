@@ -4,8 +4,6 @@
         BookName: ""
     },
 
-    idAttribute: ID,
-
     initialize: function () {
         console.log('Book has been intialized');
 

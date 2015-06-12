@@ -75,6 +75,8 @@ var bookView2 = Backbone.View.extend({
     },
 
     render: function () {
+        alert("about to render");
+        alert(this.model.get('BookName'));
         this.$el.html(this.template(this.model.attributes));
         return this;
     }
@@ -96,7 +98,7 @@ var bookListView2 = Backbone.View.extend({
         }
 
         return this;
-    },
+    }
 });
 
 
