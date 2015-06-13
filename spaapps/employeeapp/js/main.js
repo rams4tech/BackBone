@@ -1,8 +1,8 @@
 Backbone.View.prototype.close = function () {
     console.log('Closing view ' + this);
-    if (this.beforeClose) {
+    /*if (this.beforeClose) {
         this.beforeClose();
-    }
+     }*/
     this.remove();
     this.unbind();
 };
@@ -26,7 +26,7 @@ var AppRouter = Backbone.Router.extend({
     employeeDetails: function (id) {
         this.before(function () {
             var employee = app.employeeList.get(id);
-            app.showView('#content', new EmployeeView({model: emmployee}));
+            app.showView('#content', new EmployeeView({model: employee}));
         });
     },
 
